@@ -45,7 +45,7 @@ public class Calculation : Abstract
 
 
             } 
-            else if (DDemon.Health < 0)
+            if (DDemon.Health < 0)
             {
                 DDemon.Health = 0;
                 DDemon.demon = ("Demon \nHealth: " + DDemon.Health + "\nDefense: " + DDemon.Defense + "\nAttack: " + DDemon.Attack);
