@@ -7,6 +7,7 @@ public class Calculation : Abstract
 {
     [SerializeField] UI ui;
     [SerializeField] AcceptButton acceptButton;
+    [SerializeField] Demon DDemon;
 
     public GUIStyle style;
    
@@ -28,6 +29,11 @@ public class Calculation : Abstract
             acceptButton.gHealth -= Damage;
             acceptButton.ggHealth = "Health: " + acceptButton.gHealth;
 
+            DDemon.Health -= Damage;
+            DDemon.demon = ("Demon \nHealth: " + DDemon.Health + "\nDefense: " + DDemon.Defense + "\nAttack: " + DDemon.Attack);
+
+
+
 
             if (acceptButton.gHealth < 0)
             {
@@ -40,6 +46,9 @@ public class Calculation : Abstract
 
             } 
         }
+
+
+
 
         GUI.Box(new Rect(476, 610, 456, 97), "");
         GUI.Label(new Rect(476, 610, 456, 97), Lost, style);

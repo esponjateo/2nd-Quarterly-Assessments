@@ -7,6 +7,7 @@ public class Demon : Abstract
     public string demon = "Health: \nDefense: \nAttack: ";
     public GUIStyle style;
 
+    
 
     private void OnGUI()
     {

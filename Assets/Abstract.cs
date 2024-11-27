@@ -6,7 +6,7 @@ public class Abstract : MonoBehaviour
 {
 
     [SerializeField] public int Health;
-    [SerializeField] protected int Defense;
-    [SerializeField] protected int Attack;
+    [SerializeField] public int Defense;
+    [SerializeField] public int Attack;
 
 }
